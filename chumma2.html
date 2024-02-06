@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradeify | Buy.Sell.Bid.</title>
+    <link rel="stylesheet" href="chumma.css">
+    <script src="onclick1.js"></script>
+    <script src="product-controller.js"></script>
+    <base href="images-img/">
+    <script src="logbtnchange.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        <div class="nav-menu">
+            <div class="logo-div">
+                <img src="mainlogo.png" alt="" class="headname">
+                <div class="search">
+                    <input type="text" class="search__input" placeholder=Search...>
+                    <button id="search-button" class="fa fa-search" type="submit"></button>
+                    
+                </div>
+            </div>
+            <div class="menu-div">
+                <a href="#" class="nav-button" id="nav-button" onclick="onClick7()">Login</a>
+                <a href="sell.html" class="navbar">Sell Now</a>
+                <!-- <a href="" class="navbar">Chat</a> -->
+                <div class="dropdown">
+                    <span id="dropdown-more">More ⏷</span>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">Notification</a>
+                        <a href="#" class="dropdown-item">Advertise</a>
+                        <a href="#" class="dropdown-item">Customer Care</a>
+                        <a href="#" class="dropdown-item">Cart</a>
+                        <a href="#" class="dropdown-item">Your Orders</a>
+                        <a href="logout.php" class="dropdown-item" id="log-out-btn" >Log Out</a>
+
+
+                    <!-- <a href="#" class="dropdown-item">Option 4</a>
+                    <a href="#" class="dropdown-item">Option 5</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="loginpage-bg" id="loginpage-bg" >
+        <div class="login-page" id="login-page">
+            <div class="left-ad1">
+                <div class="login-txt">
+                    <h1>Login</h1>
+                </div>
+                <div class="middle-sec">
+                    <p>Login to discover exclusive offers, personalized recommendations and more!</p>
+                </div>
+                <div class="comp-logo">
+                    <img class="comp-logo" src="mainlogo.png" alt="Tradeify Logo">
+                </div>
+            </div>
+            <div class="right-ad1">
+                <div class="top-close">
+                    <img class="close" src="close.png" alt="close button" onclick="onClick2()">
+                </div>
+                <div class="bot-login">
+                        <form id="login-form-main" action="login.php" method="POST">
+                            <label id="label1" for="email-or-phone">Enter your E-mail/User-Id</label>
+                            <input type="text" id="email-or-phone" name="email-or-phone">
+                            <label id="label2" for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                            <p id="t-and-c">By continuing, you agree to Tradeify's <span id="t-o-u">Terms of Use</span> and <span id="p-p">Privacy Policy</span>.</p>
+                            <button id="login-btn" type="submit">Login</button>
+                            <center><p><a href="sign-up.htm" id="sign-up">Don't have an account yet? Sign up here!</a></p></center>
+                          </form>
+                          
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container-main">
+    <!--code here-->
+    <div class="product-handler">
+        <button id="product-controller-button-left" class="left-right-button"><</button>
+        <div class="product-division">
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+    </div>
+        <button id="product-controller-button-right" class="left-right-button">></button>
+    </div>
+
+    <div class="product-handler">
+        <div class="wrapper-4-3">
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="specimen.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">$1699</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">iPhone 13 pro max</div>
+            </div>
+
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="specimen.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">$1699</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">iPhone 13 pro max</div>
+            </div>
+
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="specimen.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">$1699</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">iPhone 13 pro max</div>
+            </div>
+            <!-- <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            </div>
+
+            
+
+
+            <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            
+            </div>
+            <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            
+            </div>-->
+        </div> 
+    </div>
+    <div class="product-handler">
+        <div class="ad-div">
+            <h1>Did you Know?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, dolorum reprehenderit, cumque 
+                atque aliquid praesentium libero quia culpa ullam magnam voluptatibus in eius excepturi 
+                asperiores, enim tempore molestiae harum dolores.</p>   
+        </div>
+    </div>
+    <div class="product-handler">
+        <button id="product-controller-button-left" class="left-right-button"><</button>
+        <div class="product-division">
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+        <div class="product-1-1">
+            <img src="specimen.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">iPhone 13 pro max</p>
+                <p class="product-1-1-price">$1999</p>
+            </div>
+        </div>
+    </div>
+        <button id="product-controller-button-right" class="left-right-button">></button>
+    </div>
+    <div class="product-handler">
+        <div class="wrapper-4-3">
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="specimen.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">$1699</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">iPhone 13 pro max</div>
+            </div>
+
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="specimen.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">$1699</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">iPhone 13 pro max</div>
+            </div>
+
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="specimen.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">$1699</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">iPhone 13 pro max</div>
+            </div>
+            <!-- <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            </div>
+
+            
+
+
+            <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            
+            </div>
+            <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            
+            </div>-->
+        </div> 
+    </div>
+
+    
+</div> 
+<footer>
+    <div class="ftr-mn-logo">
+        <img src="mainlogo.png" alt="Tradeify logo">
+    </div>
+<!--use the same id of p and h1 when converting to link-->
+    <div class="ftr-abt">
+        <h1 class="ftr-h1">About</h1>
+        <p class="ftr-p">About us</p>
+        <p class="ftr-p">Contact us</p>
+    </div>
+    <div class="ftr-cnsmr-plcy">
+        <h1 class="ftr-h1">Consumer Policy</h1>
+        <p class="ftr-p">Terms of use</p>
+        <p class="ftr-p">Return policy</p>
+        <p class="ftr-p">Security</p>
+        <p class="ftr-p">Privacy</p>
+    </div>
+    <div class="ftr-hlp">
+        <h1 class="ftr-h1">Help</h1>
+        <p class="ftr-p">Cancellation & return</p>
+        <p class="ftr-p">FAQ</p>
+    </div>
+    <div class="ftr-scl">
+        <h1 class="ftr-h1">Social</h1>
+        <p class="ftr-p">Facebook</p>
+        <p class="ftr-p">Twitter</p>
+        <p class="ftr-p">Instagram</p>
+    </div>
+</footer> 
+
+
+</body>
+
+</html>

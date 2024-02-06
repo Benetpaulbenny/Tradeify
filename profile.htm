@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradeify | Profile</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="profile.css">
+    <script src="onclick1.js"></script>
+    <script src="profiledisplay.js"></script>
+    <script src="logbtnchange.js"></script>
+    <base href="images-img/">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="nav-menu">
+        <div class="logo-div">
+            <a href="home.html"><img src="mainlogo.png" alt="" class="headname"></a>
+            <div class="search">
+                <input type="text" class="search__input" placeholder=Search...>
+                <button id="search-button" class="fa fa-search" type="submit"></button>
+                
+            </div>
+        </div>
+        <div class="menu-div">
+            <a href="#" class="nav-button" id="nav-button">Login</a>
+            <a href="sell.html" class="navbar">Sell Now</a>
+            <!-- <a href="" class="navbar">Chat</a> -->
+            <div class="dropdown">
+                <span id="dropdown-more">More ⏷</span>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">Notification</a>
+                    <a href="#" class="dropdown-item">Advertise</a>
+                    <a href="#" class="dropdown-item">Customer Care</a>
+                    <a href="#" class="dropdown-item">Cart</a>
+                    <a href="#" class="dropdown-item">Your Orders</a>
+                    <a href="logout.php" class="dropdown-item" id="log-out-btn" >Log Out</a>
+                    
+
+                <!-- <a href="#" class="dropdown-item">Option 4</a>
+                <a href="#" class="dropdown-item">Option 5</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="loginpage-bg" id="loginpage-bg" >
+        <div class="login-page" id="login-page">
+            <div class="left-ad1">
+                <div class="login-txt">
+                    <h1>Login</h1>
+                </div>
+                <div class="middle-sec">
+                    <p>Login to discover exclusive offers, personalized recommendations and more!</p>
+                </div>
+                <div class="comp-logo">
+                    <img class="comp-logo" src="mainlogo.png" alt="Tradeify Logo">
+                </div>
+            </div>
+            <div class="right-ad1">
+                <div class="top-close">
+                    <img class="close" src="close.png" alt="close button" onclick="onClick2()">
+                </div>
+                <div class="bot-login">
+                        <form id="login-form-main" action="login.php" method="POST">
+                            <label id="label1" for="email-or-phone">Enter your E-mail/User-Id</label>
+                            <input type="text" id="email-or-phone" name="email-or-phone">
+                            <label id="label2" for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                            <p id="t-and-c">By continuing, you agree to Tradeify's <span id="t-o-u">Terms of Use</span> and <span id="p-p">Privacy Policy</span>.</p>
+                            <button id="login-btn" type="submit">Login</button>
+                            <center><p><a href="sign-up.htm" id="sign-up">Don't have an account yet? Sign up here!</a></p></center>
+                          </form>
+                          
+                </div>
+            </div>
+        </div>
+    </div> -->
+<div class="profile-main-container">
+    <div class="profile-side-options">
+        <div class="profile-picture">
+
+            <!--Insert Image-->
+            <svg width="45" height="45" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="35" cy="35" r="35" fill="#EDEDED"/>
+                <g clip-path="url(#clip0_3_13)">
+                <rect x="5" y="5" width="60" height="60" rx="30" fill="white"/>
+                <rect x="23" y="15" width="24" height="24" rx="12" fill="#FFCB14"/>
+                <rect x="-10" y="45" width="90" height="90" rx="45" fill="#FFCB14"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3_13">
+                <rect x="5" y="5" width="60" height="60" rx="30" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+            <p style="margin: 0;">Hello,</p>
+            <h4 style="margin: 10px 0;" id="p-name-fn-h4">First name</h4>
+        </div>
+        <hr class="profile-side-hr">
+        <div class="profile-select">
+        
+            <button type="submit" id="profile-myprofile" onclick="showMyprofile()">
+                <span>My Profile</span>
+            </button> <br>
+            <button type="submit" id="profile-myorders" onclick="showMyorder()">
+                <span>My Orders</span>
+            </button><br>
+            <button type="submit" id="profile-cart" onclick="showCart()">
+                <span>Cart</span>
+            </button><br>
+            <button type="submit" id="profile-yourorder" onclick="showyourProducts()">
+                <span>Your Products</span>
+            </button><br>
+
+        </div>
+        
+    </div>
+    
+    <div class="profile-contents">            
+                          <!--contents from db-->
+        <div class="my-profile-contents" id="my-profile-contents">
+
+            <button type="submit" id="edit-button" onclick="editText()">Edit profile</button>
+            <button type="submit" id="save-button">Save changes</button>
+            <button type="reset" id="clear-button">Cancel</button>
+            <h3 class="info-head-spcl">Personal Informations</h3>
+            <div class="profile-div">
+                <label for="p-name-fn" class="p-header">Name</label>
+                <span onkeydown="disableEnterKey(event)" class="p-db-content" id="p-name-fn" spellcheck="false">First name</span>
+                <span onkeydown="disableEnterKey(event)" class="p-db-content" id="p-name-ln" spellcheck="false">Last name</span>
+            </div>
+            <div class="profile-div">
+            <label for="p-email" class="p-header">E-mail</label>
+            <span onkeydown="disableEnterKey(event)" class="p-db-content" id="p-email" spellcheck="false">E-mail</span>
+        </div>
+            <div class="profile-div">
+            <label for="p-phone-number" class="p-header">Phone number</label>
+            <span onkeydown="disableEnterKey(event)" class="p-db-content" inputmode="tel" id="p-phone-number">Phone number</span>
+        </div>
+            <div class="profile-div">
+            <label for="p-address" class="p-header">Address</label>
+            <span onkeydown="countKey_add(event)" class="p-db-content" id="p-address" name="homeaddr" spellcheck="false">Address</span>
+        </div>
+            <div class="profile-div">
+            <label for="p-c-address" class="p-header">Company Address</label>
+            <span onkeydown="countKey_cadd(event)" class="p-db-content" id="p-c-address" name="companyaddr" spellcheck="false">Company address</span>
+        </div>
+        </div>
+        <div class="my-orders-content" id="my-orders-content" >
+            <h1 class="info-head">Manage your orders</h1>
+            
+        </div>
+        <div class="cart-order" id="cart-order">
+            <h1 class="info-head">My Cart</h1>
+        </div>
+
+        <div class="my-orders-content" id="your-order">
+            <h1 class="info-head">Your Products</h1>
+        </div>
+</form>   
+    </div>
+</div>
+<footer>
+    <div class="ftr-mn-logo">
+        <img src="mainlogo.png" alt="Tradeify logo">
+    </div>
+<!--use the same id of p and h1 when converting to link-->
+    <div class="ftr-abt">
+        <h1 class="ftr-h1">About</h1>
+        <p class="ftr-p">About us</p>
+        <p class="ftr-p">Contact us</p>
+    </div>
+    <div class="ftr-cnsmr-plcy">
+        <h1 class="ftr-h1">Consumer Policy</h1>
+        <p class="ftr-p">Terms of use</p>
+        <p class="ftr-p">Return policy</p>
+        <p class="ftr-p">Security</p>
+        <p class="ftr-p">Privacy</p>
+    </div>
+    <div class="ftr-hlp">
+        <h1 class="ftr-h1">Help</h1>
+        <p class="ftr-p">Cancellation & return</p>
+        <p class="ftr-p">FAQ</p>
+    </div>
+    <div class="ftr-scl">
+        <h1 class="ftr-h1">Social</h1>
+        <p class="ftr-p">Facebook</p>
+        <p class="ftr-p">Twitter</p>
+        <p class="ftr-p">Instagram</p>
+    </div>
+</footer> 
+<!-- <script src="product-display.js"></script>  -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="your-order-display.js"></script>
+<script src="my-order-display.js"></script>
+<script src="cart-display.js"></script>
+
+
+
+<script>
+    document.getElementById("save-button").addEventListener("click", function() {
+        // Retrieve data from span elements
+        //var userId = document.getElementById("userId").value;
+        var fname = document.getElementById("p-name-fn").textContent;
+        var lname = document.getElementById("p-name-ln").textContent;
+        var mailid = document.getElementById("p-email").textContent;
+        var mob = document.getElementById("p-phone-number").textContent;
+        var homeaddr = document.getElementById("p-address").textContent;
+        var companyaddr = document.getElementById("p-c-address").textContent;
+
+    
+        // Create a data object to send to PHP
+        var data = {
+            //userId: userId,
+            fname: fname,
+            lname: lname,
+            mailid: mailid,
+            mob: mob,
+            homeaddr: homeaddr,
+            companyaddr: companyaddr
+            // Add more data properties for additional fields
+        };
+    
+        // Send data to PHP using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "profileaddr.php", true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Handle the response from the server (e.g., show a success message)
+                alert(xhr.responseText);
+            }
+        };
+        xhr.send(JSON.stringify(data));
+    });
+    
+    
+</script>
+
+
+
+
+</body>
+</html>

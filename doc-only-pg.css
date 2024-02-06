@@ -1,0 +1,25 @@
+h1.doc-only-pg-hdg {
+    text-align: center;
+    color: #333;
+  }
+.doc-itm {
+    padding: 10px 20px;
+  }
+.doc-sub-hdg {
+    color: #333;
+    font-size: 20px;
+  }
+.doc-par {
+    display: block;
+    margin-top: 10px;
+  }
+.doc-par p {
+    margin-bottom: 20px;
+    font-size: 15px;
+  } 
+
+  body::after {
+    content: '';
+    display: block;
+    height: 165px;
+  }

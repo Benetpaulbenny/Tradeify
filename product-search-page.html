@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradeify | Buy.Sell.Bid.</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="onclick1.js"></script>
+    <script src="jaba.js"></script>
+    <base href="images-img/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="product-search-page-style-sheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="datafetch.js"></script>
+</head>
+<body>
+    <div class="nav-menu">
+        <div class="logo-div">
+            <img src="mainlogo.png" alt="" class="headname">
+            <div class="search">
+                <form action="search-pro-display.php" method="POST" class="search-form" >
+                    <input type="text" class="search__input" placeholder="Search..." name="search_query" id="search_term">                
+                    <button id="search-button" class="fa fa-search" type="button" onclick="onClick8()"></button>
+                    </form>
+                
+            </div>
+        </div>
+        <div class="menu-div">
+            <a href="#" class="nav-button" id="nav-button" onclick="onClick7()">Login</a>
+            <a href="sell.html" class="navbar">Sell Now</a>
+            <!-- <a href="" class="navbar">Chat</a> -->
+            <div class="dropdown">
+                <span id="dropdown-more">More ⏷</span>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">Notification</a>
+                    <a href="#" class="dropdown-item">Advertise</a>
+                    <a href="#" class="dropdown-item">Customer Care</a>
+                    <a href="#" class="dropdown-item">Cart</a>
+                    <a href="#" class="dropdown-item">Your Orders</a>
+
+                <!-- <a href="#" class="dropdown-item">Option 4</a>
+                <a href="#" class="dropdown-item">Option 5</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="loginpage-bg" id="loginpage-bg" >
+    <div class="login-page" id="login-page">
+        <div class="left-ad1">
+            <div class="login-txt">
+                <h1>Login</h1>
+            </div>
+            <div class="middle-sec">
+                <p>Login to discover exclusive offers, personalized recommendations and more!</p>
+            </div>
+            <div class="comp-logo">
+                <img class="comp-logo" src="mainlogo.png" alt="Tradeify Logo">
+            </div>
+        </div>
+        <div class="right-ad1">
+            <div class="top-close">
+                <img class="close" src="close.png" alt="close button" onclick="onClick2()">
+            </div>
+            <div class="bot-login">
+                    <form id="login-form-main" action="login.php" method="POST">
+                        <label id="label1" for="email-or-phone">Enter your E-mail/User-Id</label>
+                        <input type="text" id="email-or-phone" name="email-or-phone">
+                        <label id="label2" for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                        <p id="t-and-c">By continuing, you agree to Tradeify's <span id="t-o-u">Terms of Use</span> and <span id="p-p">Privacy Policy</span>.</p>
+                        <button id="login-btn" type="submit">Login</button>
+                        <center><p><a href="sign-up.htm" id="sign-up">Don't have an account yet? Sign up here!</a></p></center>
+                      </form>
+                      
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <form action="search-pro-display.php" method="post"> -->
+<div class="searchpage-main-wrapper">
+    <div class="filter-section-wrapper">
+        <p id="filter-head">Search with filter...</p>
+        <hr id="hr-head">
+                    <div class="product-price-filter" id="filter-section-sub">
+                        <p id="filter-head">Price</p>
+                        <div class="minRanger">
+                            <label id="price-ranger-label" for="price-ranger-min">Min: ₹</label>
+                            <input type="number" name="min" id="price-ranger-min" placeholder="---" onchange="">
+                        </div>
+                        <div class="maxRanger">
+                            <label id="price-ranger-label" for="price-ranger-max">Max: ₹</label>
+                            <input type="number" name="max" id="price-ranger-max" placeholder="---">
+                        </div>
+                    
+                    </div>
+        <div id="filter-section-sub" class="type-ofPurchase">
+            <p id="filter-head">Type of purchase</p><br>
+            <input type="checkbox" name="normPurhase" id="typeofPurchase-norm">
+            <label for="typeofPurchase-norm" class="typeofPurchase-norm">Normal purchase</label><br><br>
+            <input type="checkbox" name="auctPurhase" id="typeofPurchase-auct">
+            <label for="typeofPurchase-auct" class="typeofPurchase-auct">Auction purchase</label>
+        </div>
+        <div id="filter-section-sub" class="productAge">
+            <p id="filter-head">Product age</p><br>
+            <input type="checkbox" name="newProduct" id="newProduct">
+            <label id="productAge-new" for="newProduct">New</label><br>
+            <p class="customAge">custom age</p>
+            <p class="custom-ageSelector">From <span id="stDate"> <input type="number" min="1900" max="2099" step="1" value="---" id="min-price" name="minyear" />
+            </span>till <span id="enDate"><input type="number" min="1900" max="2099" step="1" value="---" id="max-price" name="maxyear"/>
+            </span></p>
+        </div>
+    </div>
+<!-- </form> -->
+
+
+
+
+
+<!-- <div class="searchpage-main-wrapper">
+    <div class="filter-section-wrapper">
+        <p id="filter-head">Search with filter...</p>
+        <hr id="hr-head">
+        <div class="product-price-filter" id="filter-section-sub">
+            <p id="filter-head">Price</p>
+            <div class="minRanger">
+                <label id="price-ranger-label" for="price-ranger-min">Min: ₹</label>
+                <input type="number" name="min" id="price-ranger-min" placeholder="---">
+            </div>
+            <div class="maxRanger">
+                <label id="price-ranger-label" for="price-ranger-max">Max: ₹</label>
+                <input type="number" name="max" id="price-ranger-max" placeholder="---">
+            </div>
+        </div>
+        <div id="filter-section-sub" class="type-ofPurchase">
+            <p id="filter-head">Type of purchase</p><br>
+            <input type="checkbox" name="normPurhase" id="typeofPurchase-norm">
+            <label for="typeofPurchase-norm" class="typeofPurchase-norm">Normal purchase</label><br><br>
+            <input type="checkbox" name="auctPurhase" id="typeofPurchase-auct">
+            <label for="typeofPurchase-auct" class="typeofPurchase-auct">Auction purchase</label>
+        </div>
+        <div id="filter-section-sub" class="productAge">
+            <p id="filter-head">Product age</p><br>
+            <input type="checkbox" name="newProduct" id="newProduct">
+            <label id="productAge-new" for="newProduct">New</label><br>
+            <p class="customAge">custom age</p>
+            <p class="custom-ageSelector">From <span id="stDate"> <input type="number" min="1900" max="2099" step="1" value="---" id="min-price" name="minyear" />
+            </span>till <span id="enDate"><input type="number" min="1900" max="2099" step="1" value="---" id="max-price" name="maxyear"/>
+            </span></p>
+        </div>
+        <button id="filterButton">Filter</button>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+    <div class="sort-search-product-wrapper">
+        
+        <div class="sort-section">  
+            <span id="sortBy">Sort by:</span>
+                <button class="sortController" id="price-LowHigh" onclick="onClick11()">Price: Low-High</button>
+                <button class="sortController" id="price-HighLow" onclick="onClick12()">Price: High-Low</button>
+                <button class="sortController" id="newFirst" onclick="onClick13()">Newest First</button>
+                <button class="sortController" id="oldFirst" onclick="onClick14()">Oldest First</button>
+        </div>
+        
+        <script>
+            document.getElementById('price-LowHigh').addEventListener('click', function() {
+                buttonClicked('price-LowHigh');
+            });
+
+            document.getElementById('price-HighLow').addEventListener('click', function() {
+                buttonClicked('price-HighLow');
+            });
+            document.getElementById('newFirst').addEventListener('click', function() {
+                buttonClicked('newFirst');
+            });
+            document.getElementById('oldFirst').addEventListener('click', function() {
+                buttonClicked('oldFirst');
+            });
+            function buttonClicked(buttonId) {
+                // Remove active class from all buttons
+                document.querySelectorAll('.button').forEach(button => {
+                    button.classList.remove('active');
+                });
+
+                // Add active class to the clicked button
+                document.getElementById(buttonId).classList.add('active');
+
+                // Store the active button id in localStorage
+                localStorage.setItem('activeButton', buttonId);
+            }
+
+            window.onload = function() {
+                // Get the active button id from localStorage
+                var activeButtonId = localStorage.getItem('activeButton');
+                
+                if (activeButtonId) {
+                    // Set the active class on the button
+                    document.getElementById(activeButtonId).classList.add('active');
+                }
+            };
+
+
+            function onClick11(){
+                sort('priceLowHigh');                
+            }
+            function onClick12(){
+                sort('priceHighLow');
+            }
+            function onClick13(){
+                sort('newestFirst');
+            }
+            function onClick14(){
+                sort('oldestFirst');
+            }
+            function sort(value) {
+                localStorage.setItem('sortValue', value);
+                location.reload(); // Reload the page to trigger the search with sorting
+            }
+
+            function onClick21(value1){
+                localStorage.setItem('min',value1);
+            }
+
+            
+
+ 
+
+        </script>
+        
+        <div class="search-product-section" id="search-product-section">
+        <!--    <div class="productWrapper">
+                <img src="specimen.JPG" alt="" class="search-productImage">
+                <div class="product-summary">
+                    <p class="productName">iPhone 13 pro max</p>
+                    <span id="productAge-new">New</span><span id="productPid">#PID1854</span>
+                    <p class="search-productPrice">$1699</p>
+                    <p class="typeofPurchase-norm">Normal Puchase</p>
+                </div>
+            </div>
+            <div class="productWrapper">
+                <img src="specimen.JPG" alt="" class="search-productImage">
+                <p class="productName">iPhone 13 pro max</p>
+                <span id="productAge-new">New</span><span id="productPid">#PID1854</span>
+                <p class="search-productPrice">$1699</p>
+                <p class="typeofPurchase-norm">Normal Puchase</p>
+            </div>
+            <div class="productWrapper">
+                <img src="specimen.JPG" alt="" class="search-productImage">
+                <div class="product-summary">
+                    <p class="productName">iPhone 13 pro max</p>
+                    <span id="productAge-mfd">2019</span>
+                    <p class="search-productPrice"><span id="bidValue">Opening Bid : </span>$1699</p>
+                    <p class="typeofPurchase-auct">Auction Puchase</p>
+                </div>
+            </div>
+            <div class="productWrapper">
+                <img src="specimen.JPG" alt="" class="search-productImage">
+                <p class="productName">iPhone 13 pro max</p>
+                <span id="productAge-new">New</span><span id="productPid">#PID1854</span>
+                <p class="search-productPrice">$1699</p>
+                <p class="typeofPurchase-norm">Normal Puchase</p>
+            </div>
+            <div class="productWrapper">
+                <img src="specimen.JPG" alt="" class="search-productImage">
+                <p class="productName">iPhone 13 pro max</p>
+                <span id="productAge-new">New</span><span id="productPid">#PID1854</span>
+                <p class="search-productPrice">$1699</p>
+                <p class="typeofPurchase-norm">Normal Puchase</p>
+            </div>
+            <div class="productWrapper">
+                <img src="specimen.JPG" alt="" class="search-productImage">
+                <p class="productName">iPhone 13 pro max</p>
+                <span id="productAge-new">New</span><span id="productPid">#PID1854</span>
+                <p class="search-productPrice">$1699</p>
+                <p class="typeofPurchase-norm">Normal Puchase</p>
+            </div> 
+        </div>-->
+    </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+
+
+
+<footer>
+    <div class="ftr-mn-logo">
+        <img src="mainlogo.png" alt="Tradeify logo">
+    </div>
+<!--use the same id of p and h1 when converting to link-->
+    <div class="ftr-abt">
+        <h1 class="ftr-h1">About</h1>
+        <p class="ftr-p">About us</p>
+        <p class="ftr-p">Contact us</p>
+    </div>
+    <div class="ftr-cnsmr-plcy">
+        <h1 class="ftr-h1">Consumer Policy</h1>
+        <p class="ftr-p">Terms of use</p>
+        <p class="ftr-p">Return policy</p>
+        <p class="ftr-p">Security</p>
+        <p class="ftr-p">Privacy</p>
+    </div>
+    <div class="ftr-hlp">
+        <h1 class="ftr-h1">Help</h1>
+        <p class="ftr-p">Cancellation & return</p>
+        <p class="ftr-p">FAQ</p>
+    </div>
+    <div class="ftr-scl">
+        <h1 class="ftr-h1">Social</h1>
+        <p class="ftr-p">Facebook</p>
+        <p class="ftr-p">Twitter</p>
+        <p class="ftr-p">Instagram</p>
+    </div>
+</footer>
+</body>
+</html>

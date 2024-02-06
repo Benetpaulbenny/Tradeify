@@ -1,0 +1,196 @@
+:root{
+    --tfyblue:#02001d;
+    --tfysec-blue:#595959;
+    --tfyyellow:#FC9905;
+}
+body{
+    background: #ededed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.profile-main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+   
+    flex-direction: row;
+}
+.profile-side-options{
+    background-color: white;
+    width: 25%;
+    height: 35em;
+    margin: 13px 13px 13px 4em;
+    padding: 16px;
+    border-radius: 4px;
+    color: #303030;
+}
+hr.profile-side-hr{
+    background-color: #ededed;
+    
+    border: none;
+    height: 15px;
+}
+.profile-contents{
+    width: 60%;
+    background-color: white;
+    margin: 13px;
+    border-radius: 4px;
+    position: relative;
+    display: grid;
+}
+.my-profile-contents,.my-orders-content,.cart-order{
+    grid-area: 1/-1;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0;
+    overflow: auto;
+    display: none;
+    height: 34em;
+}
+.my-profile-contents{
+    background-color: white;
+    display: block; 
+                         /*my profile tab*/
+}
+
+.profile-select > button{
+    margin: 5px 0;
+    padding: 12px;
+    background-color: white;
+    color: var(--tfyblue);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+.profile-select > button >span{
+    float: left;
+    font-size: 16px;
+}
+.profile-select > button:hover{
+    background-color: var(--tfyblue);
+    color: white;
+}
+button#edit-button,button#save-button{
+    border-radius: 4px;
+    border: 0;
+    font-size: 13px;
+    padding: 7px 15px;
+    background-color: var(--tfyyellow);
+    color: white;
+    cursor: pointer;
+    float: right;
+}
+button#clear-button{
+    border-radius: 4px;
+    border: 1px solid var(--tfyblue);
+    font-size: 13px;
+    padding: 5px 15px;
+    background-color: #fff;
+    color: var(--tfyblue);
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    display: none;
+}
+button#save-button{
+    display: none;
+}
+
+
+.info-head-spcl{
+    margin-top: 70px;
+    color: var(--tfysec-blue);
+    border-bottom: 1px solid var(--tfyblue);
+    font-size: 24px;
+  font-weight: 600;
+
+}
+.info-head{
+    margin-top: 30px;
+    color: var(--tfysec-blue);
+    border-bottom: 1px solid var(--tfyblue);
+    font-size: 24px;
+  font-weight: 600;
+
+}
+/* .p-header{
+    font-size: 16px;
+  font-weight: 400;
+  color: grey;
+  padding: 10px 0px;
+  margin: 0;
+  margin-top: 30px;
+} */
+.profile-div{
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: grey;
+}
+span.p-db-content{
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: var(--tfyblue);
+    /* background-color: #02001d0a; */
+    border: none;
+    min-width: 14em;
+    margin-right: 15px;
+    /* border-radius: 4px; */
+    border-bottom: 1px solid #d1d1d1;
+    outline: none;
+}
+span.p-db-content:focus{
+    background-color: #02001d0a;
+}
+.product{
+    --tfy-grey: #9e9e9e;
+    --prdct-subtle-fnt-sz:14px;
+    --tfy-grey-two: #525252;
+    --def-marg-nne:0;
+    margin-bottom: 10px;
+    display: flex;
+    /* background-color: aqua; */
+    padding: 10px;
+    border-bottom: 1px solid dimgray;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-image: linear-gradient(to right, white, var(--tfyblue), white) 1;
+}
+            /* image css modifier!! */
+
+    
+h2.prod_name{
+    margin: 0;
+    color: var(--tfysec-blue);
+    font-weight: 600;
+}
+p.product-type-subtitle{
+    color: var(--tfy-grey);
+    font-size: var(--prdct-subtle-fnt-sz);
+    margin: var(--def-marg-nne);
+}
+p.product-purchase-type{
+    margin: var(--def-marg-nne);
+    background-color: var(--tfyblue);
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-size: var(--prdct-subtle-fnt-sz);
+}
+p.prod_id{
+    margin: var(--def-marg-nne);
+    color: var(--tfy-grey);
+}
+p.prod_selr_nm{
+    margin: var(--def-marg-nne);
+    font-size: var(--prdct-subtle-fnt-sz);
+}
+span.product-price{
+    margin: var(--def-marg-nne);
+    font-size: 22px;
+    color: green;
+    font-weight: 600;
+}

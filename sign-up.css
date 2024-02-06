@@ -1,0 +1,104 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+h1.sign-up-hdg,h4.form-fill-query{
+    margin-bottom: 0;
+}
+.inr-mn-container{
+    padding: 30px;
+    display: flex;
+}
+.inr-lft-container,.inr-rgt-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form#sign-up-form-main{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 10px;
+}
+form#sign-up-form-main > label,.verify-id{
+    padding: 18px 10px 0 0;
+    color:gray
+    
+}
+form#sign-up-form-main > input,.verify-id > input{
+    border: 0;
+  border-bottom: 1px solid grey;
+  height: 1.5em;
+  outline: none;
+  padding-left: 10px;
+}
+.verify-id{
+    padding: 20px 0 15px 0;
+    display: flex;
+    align-items: center;
+}
+.verify-id input[type=submit]{
+    background-color: #FC9905;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.verification > svg{
+    height: 20px;
+    width: 20px;
+    padding: 0 10px;
+}
+#verified{
+    display: none;
+}                                   /*change to display:block*/
+#rejected{
+    display: none;
+}
+.warning {
+    position: relative;
+    display: inline-block;
+    padding: 0 7px;
+  }
+  
+  .warning .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #02001d;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .warning .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #02001d transparent transparent transparent;
+  }
+  
+  .warning:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .warning-message{
+    color: red;
+    padding: 10px;
+    font-size: 12px;
+  }

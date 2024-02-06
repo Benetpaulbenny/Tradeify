@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradeify | Buy.Sell.Bid.</title>
+    <link rel="stylesheet" href="chumma1.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="onclick1.js"></script>
+    <script src="product-controller.js"></script>
+    <script src="logbtnchange.js"></script>
+    <!-- <script src="jaba.js"></script> -->
+    <script src="product-landingPage-controlls.js"> </script>
+    <link rel="stylesheet" href="styles/chumma.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <base href="images-img/">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        <div class="nav-menu">
+            <div class="logo-div">
+                <img src="mainlogo.png" alt="" class="headname">
+                <div class="search">
+                    <form action="search-pro-display.php" method="POST" class="search-form" >
+                    <input type="text" class="search__input" placeholder="Search..." name="search_query" id="search_term">                
+                    <button id="search-button" class="fa fa-search" type="button" onclick="onClick8()"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="menu-div">
+                <a href="#" class="nav-button" id="nav-button" onclick="onClick7()">Login</a>
+                <a href="sell.html" class="navbar">Sell Now</a>
+                <!-- <a href="" class="navbar">Chat</a> -->
+                <div class="dropdown">
+                    <span id="dropdown-more">More ⏷</span>
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">Notification</a>
+                        <a href="#" class="dropdown-item">Advertise</a>
+                        <a href="#" class="dropdown-item">Customer Care</a>
+                        <!-- <a href="#" class="dropdown-item">Cart</a>
+                        <a href="#" class="dropdown-item">Your Orders</a> -->
+                        <a href="logout.php" class="dropdown-item" id="log-out-btn" >Log Out</a>
+
+
+                    <!-- <a href="#" class="dropdown-item">Option 4</a>
+                    <a href="#" class="dropdown-item">Option 5</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="loginpage-bg" id="loginpage-bg" >
+        <div class="login-page" id="login-page">
+            <div class="left-ad1">
+                <div class="login-txt">
+                    <h1>Login</h1>
+                </div>
+                <div class="middle-sec">
+                    <p>Login to discover exclusive offers, personalized recommendations and more!</p>
+                </div>
+                <div class="comp-logo">
+                    <img class="comp-logo" src="mainlogo.png" alt="Tradeify Logo">
+                </div>
+            </div>
+            <div class="right-ad1">
+                <div class="top-close">
+                    <img class="close" src="close.png" alt="close button" onclick="onClick2()">
+                </div>
+                <div class="bot-login">
+                        <form id="login-form-main" action="login.php" method="POST">
+                            <label id="label1" for="email-or-phone">Enter your E-mail/User-Id</label>
+                            <input type="text" id="email-or-phone" name="email-or-phone">
+                            <label id="label2" for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                            <p id="t-and-c">By continuing, you agree to Tradeify's <span id="t-o-u">Terms of Use</span> and <span id="p-p">Privacy Policy</span>.</p>
+                            <button id="login-btn" type="submit">Login</button>
+                            <center><p><a href="sign-up.htm" id="sign-up">Don't have an account yet? Sign up here!</a></p></center>
+                          </form>
+                          
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container-main">
+    <!--code here-->
+    <div class="product-handler">
+        <button id="product-controller-button-left" class="left-right-button"><</button>
+        <div class="product-division">
+            
+            
+                <div class="product-1-1" onclick="onClick91(115)"> 
+                    <img src="IMG_0093.JPG" loading="lazy" alt="" class="product-img-1-1">
+                    <div class="name-price">
+                        <p class="product-1-1-name">Spigen mobile case</p>
+                        <p class="product-1-1-price">₹600</p>
+                        <!-- <input type="hidden" value="115" name="proid"> -->
+                    </div>
+                </div>
+            
+
+        
+        <div class="product-1-1" onclick="onClick91(112)">
+            <img src="IMG_0097.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Apple Magsafe</p>
+                <p class="product-1-1-price">₹10,000</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(116)">
+            <img src="IMG_0118.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Sonic Watch</p>
+                <p class="product-1-1-price">₹900</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(114)">
+            <img src="IMG_0100.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Fastrack Watch</p>
+                <p class="product-1-1-price">₹2,500</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(117)">
+            <img src="IMG_0101.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Boat Smart Watch</p>
+                <p class="product-1-1-price">₹3,000</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(118)">
+            <img src="IMG_0114.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Poco M3</p>
+                <p class="product-1-1-price">₹4,500</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(121)">
+            <img src="IMG_0127.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Logitech M90</p>
+                <p class="product-1-1-price">₹600</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(122)"> 
+            <img src="IMG_0135.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Laser Light</p>
+                <p class="product-1-1-price">₹300</p>
+            </div>
+        </div>
+    </div>
+        <button id="product-controller-button-right" class="left-right-button">></button>
+    </div>
+
+    <div class="product-handler">
+        <div class="wrapper-4-3">
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative" onclick="onClick91(123)">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="IMG_0095.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">₹26,000</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Redmi 11i 5G</div>
+            </div>
+
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative" onclick="onClick91(124)">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="specimen.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">₹1,40,000</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">iPhone 13 pro max</div>
+            </div>
+
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative" onclick="onClick91(125)">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="IMG_0106.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">₹2,000</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Red Active Perfume</div>
+            </div>
+            <!-- <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            </div>
+
+            
+
+
+            <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            
+            </div>
+            <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            
+            </div>-->
+        </div> 
+    </div>
+    <div class="product-handler">
+        <div class="ad-div">
+            <h1><i>TRADEIFY</i></h1>
+            <p>Welcome to Tradeify, your go-to destination for buying, selling, and bidding on a wide range of products. 
+                Explore a diverse range of products designed for your convenience and delivered with utmost professionalism.</p>   
+        </div>
+    </div>
+    <div class="product-handler">
+        <button id="product-controller-button-left" class="left-right-button"><</button>
+        <div class="product-division">
+
+        <div class="product-1-1" onclick="onClick91(126)">
+            <img src="IMG_0139.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Hotwheel Toy Set</p>
+                <p class="product-1-1-price">₹500</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(127)">
+            <img src="IMG_0185.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Boat Stone 650</p>
+                <p class="product-1-1-price">₹1,500</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(128)">
+            <img src="IMG_0116.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Apple Power Adapter</p>
+                <p class="product-1-1-price">₹2,000</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(130)">
+            <img src="IMG_0131.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Rubik's Cube</p>
+                <p class="product-1-1-price">₹150</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(129)">
+            <img src="IMG_0109.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Black Extreme</p>
+                <p class="product-1-1-price">₹1,500</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(201)">
+            <img src="IMG_0144.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Apple iPod</p>
+                <p class="product-1-1-price">₹500</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(131)">
+            <img src="IMG_0158.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Nikon Battery Adapter</p>
+                <p class="product-1-1-price">₹200</p>
+            </div>
+        </div>
+        <div class="product-1-1" onclick="onClick91(136)">
+            <img src="IMG_0162.JPG" loading="lazy" alt="" class="product-img-1-1">
+            <div class="name-price">
+                <p class="product-1-1-name">Harddisk Case</p>
+                <p class="product-1-1-price">₹500</p>
+            </div>
+        </div>
+    </div>
+    <button id="product-controller-button-right" class="left-right-button">></button>
+</div>
+    <div class="product-handler">
+        <div class="wrapper-4-3">
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative" onclick="onClick91(132)">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="IMG_0122.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">₹3,000</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Nikon DSLR</div>
+            </div>
+
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative" onclick="onClick91(134)">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="IMG_0126.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">₹5,000</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Nikon Lens</div>
+            </div>
+
+            <div class="Group12" style="margin-right:20px; width: 410px; height: 266px; position: relative" onclick="onClick91(135)">
+                <img class="Rectangle12" style="width: 247px; height: 247px; left: 185px; top: 9px; position: absolute; border-radius: 4px" src="IMG_0169.JPG" />
+                <div class="Rectangle13" style="width: 247px; height: 247px; left: 11px; top: 9px; position: absolute; background: linear-gradient(90deg, black 0%, black 71%, rgba(0, 0, 0, 0) 100%); border-radius: 4px"></div>
+                <div class="1699" style="left: 28px; top: 133px; position: absolute; text-align: center; color: white; font-size: 40px; font-family: Inter; font-weight: 600; word-wrap: break-word">₹500</div>
+                <div class="Iphone13ProMax" style="left: 28px; top: 103px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Honor 9 Lite</div>
+            </div>
+            <!-- <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            </div>
+
+            
+
+
+            <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            
+            </div>
+            <div class="product-4-3">
+                <div class="details-wrapper-4-3">
+                    <p class="product-4-3-name">iPhone 13 pro max</p>
+                    <p class="product-4-3-price">$1999</p>
+                </div>
+                <img src="specimen.JPG" alt="" loading="lazy" class="product-img-4-3">
+            
+            </div>-->
+        </div> 
+    </div>
+    
+</div> 
+<footer>
+    <div class="ftr-mn-logo">
+        <img src="mainlogo.png" alt="Tradeify logo">
+    </div>
+<!--use the same id of p and h1 when converting to link-->
+    <div class="ftr-abt">
+        <h1 class="ftr-h1">About</h1>
+        <p class="ftr-p">About us</p>
+        <p class="ftr-p">Contact us</p>
+    </div>
+    <div class="ftr-cnsmr-plcy">
+        <h1 class="ftr-h1">Consumer Policy</h1>
+        <p class="ftr-p">Terms of use</p>
+        <p class="ftr-p">Return policy</p>
+        <p class="ftr-p">Security</p>
+        <p class="ftr-p">Privacy</p>
+    </div>
+    <div class="ftr-hlp">
+        <h1 class="ftr-h1">Help</h1>
+        <p class="ftr-p">Cancellation & return</p>
+        <p class="ftr-p">FAQ</p>
+    </div>
+    <div class="ftr-scl">
+        <h1 class="ftr-h1">Social</h1>
+        <p class="ftr-p">Facebook</p>
+        <p class="ftr-p">Twitter</p>
+        <p class="ftr-p">Instagram</p>
+    </div>
+</footer> 
+<!-- <script src="vyali.js"></script> -->
+
+
+</body>
+
+</html>

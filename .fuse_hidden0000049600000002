@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch and Add Data to SQL</title>
+</head>
+<body>
+    <form action="train2.php" method="POST">
+    <button id="fetchButton" value="112" name="proid">Fetch and Add to SQL</button>
+</form>
+    <!-- <script src="train.js"></script> -->
+</body>
+</html>

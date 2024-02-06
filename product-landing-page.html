@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradeify | Buy.Sell.Bid.</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="chumma1.css">
+    <script src="onclick1.js"></script>
+    <script src="datafetch.js"></script>
+    <link rel="stylesheet" href="landing-page.css">
+    <script src="logbtnchange.js"></script>
+    <base href="images-img/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    showEverything();
+});
+    </script> -->
+
+</head>
+<body>
+    <div class="nav-menu">
+        <div class="logo-div">
+            <img src="mainlogo.png" alt="" class="headname">
+            <div class="search">
+                <input type="text" class="search__input" placeholder=Search...>
+                <button id="search-button" class="fa fa-search" type="submit"></button>
+                
+            </div>
+        </div>
+        <div class="menu-div">
+            <a href="#" class="nav-button" id="nav-button" onclick="onClick7()">Login</a>
+            <a href="sell.html" class="navbar">Sell Now</a>
+            <!-- <a href="" class="navbar">Chat</a> -->
+            <div class="dropdown">
+                <span id="dropdown-more">More ⏷</span>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">Notification</a>
+                    <a href="#" class="dropdown-item">Advertise</a>
+                    <a href="#" class="dropdown-item">Customer Care</a>
+                    <a href="#" class="dropdown-item">Cart</a>
+                    <a href="#" class="dropdown-item">Your Orders</a>
+                    <form action="logout.php" method="POST"><a href="#" class="dropdown-item" id="log-out-btn" >Log Out</a></form>
+
+
+                <!-- <a href="#" class="dropdown-item">Option 4</a>
+                <a href="#" class="dropdown-item">Option 5</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="loginpage-bg" id="loginpage-bg" >
+    <div class="login-page" id="login-page">
+        <div class="left-ad1">
+            <div class="login-txt">
+                <h1>Login</h1>
+            </div>
+            <div class="middle-sec">
+                <p>Login to discover exclusive offers, personalized recommendations and more!</p>
+            </div>
+            <div class="comp-logo">
+                <img class="comp-logo" src="mainlogo.png" alt="Tradeify Logo">
+            </div>
+        </div>
+        <div class="right-ad1">
+            <div class="top-close">
+                <img class="close" src="close.png" alt="close button" onclick="onClick2()">
+            </div>
+            <div class="bot-login">
+                    <form id="login-form-main" action="login.php" method="POST">
+                        <label id="label1" for="email-or-phone">Enter your E-mail/User-Id</label>
+                        <input type="text" id="email-or-phone" name="email-or-phone">
+                        <label id="label2" for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                        <p id="t-and-c">By continuing, you agree to Tradeify's <span id="t-o-u">Terms of Use</span> and <span id="p-p">Privacy Policy</span>.</p>
+                        <button id="login-btn" type="submit">Login</button>
+                        <center><p><a href="sign-up.htm" id="sign-up">Don't have an account yet? Sign up here!</a></p></center>
+                      </form>
+                      
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-container">
+    <div class="product-sub-wrapper">
+        <div class="testdiv" id="testdiv">
+
+        </div>
+        <div class="image-button-section">
+                <div id="productImage-l-p">
+                <!-- <img src="specimen.JPG" loading="lazy" alt="" id="landProduct-image"> -->
+                </div>
+                <div class="imageController">
+
+                </div>
+            <form action="addcart.php" method="POST">
+            <div id="buy-add-button">
+                <button id="addtoCart" type="submit" name="adcart" value="Cart">Add to Cart</button><br>
+                <button id="buyNow" type="submit" name="adbuy" value="Buy">Buy now!</button>
+            </div>
+            </form>
+            <div id="bidButton">
+                <p id="dateLeftAlert"><span id="msgAlert">Auction ends by</span><br><span id="dateEnd">12/10/2023</span></p>
+                <button onclick="toggleClassList()" id="placeBidBtn">Participate in this Auction</button>
+            </div>
+
+        </div>
+        <div class="product-info-container">
+            <p id="landProduct-name"></p>
+            <div class="landProduct-more-deatils">
+                <div class="cppmDetails">
+                    <p id="l-p-category">Category: <span id="showCategory"></span></p>
+                    <p id="l-p-pid">Product ID: <span>#PID</span><span id="showPID"></span></p>
+                    <p id="l-p-productAge">Product age: <span id="showP-Age-new">New</span><span id="showP-Age-mfd">old</span></p>
+                    <p id="l-p-modeofPurchase">Mode of purchase: <span id="showMOP-norm">Normal Purchase</span><span id="showMOP-auct">Auction Purchase</span></p>
+                </div>
+                <div id="division-line"></div>
+                <div id="product-pricing">
+                    <p id="l-p-productPrice"></p>
+                </div>
+                <div id="auction-pricing">
+                    <p class="currentBid">Highest bid: <span id="currentBid"></span></p>
+                    <hr>
+                    <p class="openBid">Openning bid: <span id="openBid"></span></p>
+                </div>
+            </div>
+            <div class="placeBid" id="placeBid">
+                <div class="top-close">
+                    <img class="close" src="close.png" alt="close button" onclick="toggleClassList()">
+                </div>
+                <form class="bidAmountform" action="bidamount_change.php" method="POST">
+                    <label for="bidAmountInput" class="bidAmountinput">Amount</label>
+                    <button class="bidAmountbutton" id="bidAmountAdd" type="button" onclick="changeCount(1)">+</button>
+                    <input type="number" id="bidAmountInput" value="0" class="inputBidAmount" name="bidamount">
+                    <button class="bidAmountbutton" id="bidAmountMinus" type="button" onclick="changeCount(-1)">-</button><br> 
+                </form>
+                <button id="placeYourBid" type="submit">Place your bid</button>
+                <div class="BidNote">
+                    <span class="noteHead">Note:</span>
+                <p id="bidNote">To place a bid, enter the amount you're willing to pay for the item.
+                    The auction will continue until the specified end time, and the highest bid at that time 
+                    will win the item. By placing a bid, you agree to our Terms and Conditions and commit to 
+                    purchasing the item if you are the winning bidder.</p>
+                </div>
+                
+            </div>
+            <div class="landProduct-description">
+                <p id="l-p-desriptionhead">Product description:</p>
+                <span id="l-p-description"></span>
+            </div>
+            <div class="landProduct-sellerDetails">
+                <span id="l-p-sellerName">                 
+                </span>
+                <span id="l-p-sellerContact">
+                </span>
+                <pre id="l-p-sellerAddress">
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="ftr-mn-logo">
+        <img src="mainlogo.png" alt="Tradeify logo">
+    </div>
+<!--use the same id of p and h1 when converting to link-->
+    <div class="ftr-abt">
+        <h1 class="ftr-h1">About</h1>
+        <p class="ftr-p">About us</p>
+        <p class="ftr-p">Contact us</p>
+    </div>
+    <div class="ftr-cnsmr-plcy">
+        <h1 class="ftr-h1">Consumer Policy</h1>
+        <p class="ftr-p">Terms of use</p>
+        <p class="ftr-p">Return policy</p>
+        <p class="ftr-p">Security</p>
+        <p class="ftr-p">Privacy</p>
+    </div>
+    <div class="ftr-hlp">
+        <h1 class="ftr-h1">Help</h1>
+        <p class="ftr-p">Cancellation & return</p>
+        <p class="ftr-p">FAQ</p>
+    </div>
+    <div class="ftr-scl">
+        <h1 class="ftr-h1">Social</h1>
+        <p class="ftr-p">Facebook</p>
+        <p class="ftr-p">Twitter</p>
+        <p class="ftr-p">Instagram</p>
+    </div>
+</footer>
+<script src="product-landingPage-controlls.js"></script>
+</body>
+
+<script>
+    function onClick101(){
+    window.alert("id id"+proall);
+}
+
+</script>
+
+</html>

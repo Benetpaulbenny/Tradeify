@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Data</title>
+</head>
+<body>
+    <form action="process.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

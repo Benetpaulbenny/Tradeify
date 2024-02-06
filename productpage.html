@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <base href="images-img/">
+</head>
+<body>
+    <h1>Product List</h1>
+    <div id="product-list"></div>
+
+    <!-- <script>
+        // Fetch data from PHP script and display the product just for trial and not worked yet!
+        fetch('displayfix.php')
+            .then(response => response.json())
+            .then(data => {
+                // Get the product list container
+                const productList = document.getElementById('product-list');
+
+                // Loop through the fetched data and create HTML elements
+                data.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.innerHTML = `
+                        <h2>${product.product_name}</h2>
+                        <p>Category: ${product.category}</p>
+                        <p>Type: ${product.new_old_type}</p>
+                        <p>Year: ${product.year}</p>
+                        <p>Price: $${product.price}</p>
+                        <p>Quantity: ${product.quantity}</p>
+                        <p>Description: ${product.description}</p>
+                        <img src="${product.images}" alt="${product.product_name}">
+                    `;
+                    productList.appendChild(productDiv);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    </script> -->
+
+    <script>
+        // Fetch data from PHP script
+        fetch('productpg1.php')
+            .then(response => response.json())
+            .then(data => {
+                // Convert the fetched data into a JavaScript array
+                const sellfixArray = data;
+
+                // Log the array to the console (for testing)
+                console.log(sellfixArray);
+
+                // Now you can work with the sellfixArray in your JavaScript code
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
