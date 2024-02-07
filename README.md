@@ -1,25 +1,35 @@
 # Project-Tradeify
-Buy . Sell . Bid
 
-Disclaimer: Images, logos, names present in this site are not licensed or patented and this website will not be published on internet without proper license or certificate.
+Tradeify is an e-commerce website with an innovative feature of bidding. Users can engage in buying and selling products through fixed prices or bidding, making it a versatile platform for online transactions.
 
+## Features:
 
-E-Commerce website.
-This is an e-commerce website with an added feature of bidding. A user can approach this website either to buy/sell products with a 
-fixed price or to buy/sell things through bidding. Thus the website is divided into two parts:- 
+**Shopping Section:**
 
-I) Shopping part
+Users can browse through a wide range of products listed with fixed prices.
+Sellers upload product details, descriptions, images, and contact information.
+Buyers can view products and make purchases directly at the listed prices.
 
-II) Auction part. 
+**Auction Section:**
 
+Sellers upload commodities with detailed descriptions, images, and contact information.
+Sellers set a starting price and specify the duration of the auction.
+Bidders can place bids on the commodities during the auction period.
+The bidder with the highest bid at the end of the auction wins the commodity.
 
-The user should create an account on this website to perform the above-mentioned activities. 
-The user who approaches the website as a seller uploads the details and descriptions of the product along with its pictures 
-and the seller's contact details. They fix a price for the product and publishe it for the buyers to check out.
+**User Accounts:**
 
+Users must create an account on Tradeify to access all features and participate in buying or selling activities.
+Sellers can manage their listings and monitor bidding activities.
+Buyers can track their purchases and bidding history.
 
-In the auction part of the website, the seller uploads the commodity with its details, pictures, descriptions, and the seller’s details.
-The seller also declares a date and time when the bid takes place along with a starting price for the commodity and the duration 
-of the auction.The bidders could bid on the 
-commodity from the proposed time and the bidder who bid the largest amount when the time ends wins the commodity and is bought from 
-the seller or the auctioner.
+## Technologies Used:<br>
+**Frontend:** HTML, CSS, JavaScript<br>
+**Frontend frameworks:** JQuery, AJAX<br>
+**Backend:** PHP<br>
+**Database:** MySql<br>
+
+## Disclaimer:
+Tradeify is a fictional project created for educational purposes. The website and its features are not intended for commercial use without proper licensing and certification.
+
+Enjoy exploring Tradeify, where you can buy, sell, and bid with ease! 🛒💰🔨
